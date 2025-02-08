@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<head>
+    <title>Delicious Bites - Home</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            background-color: #F8EDEB;
+            color: #5C3D2E;
+        }
+        nav {
+            background: #D8A7B1;
+            color: white;
+            padding: 15px;
+            display: flex;
+            justify-content: space-around;
+            transition: background 0.3s ease-in-out;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 600;
+        }
+        .search-bar {
+            text-align: center;
+            margin: 20px;
+        }
+        .search-bar input {
+            width: 50%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .menu {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+        .menu-item {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            width: 250px;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+        .menu-item:hover {
+            transform: scale(1.05);
+        }
+        .menu-item img {
+            width: 100%;
+            border-radius: 8px;
+            height: 150px;
+            object-fit: cover;
+        }
+        .menu-item h3 {
+            color: #B5838D;
+        }
+        .footer {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 2.5px;
+            font-size: 14px;
+            border-radius: 4px;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center; color: #B5838D; margin-top: 20px; font-size: 42px; font-family: 'Poppins', sans-serif; font-weight: 600; animation: fadeIn 1.5s ease-in-out;"><span style="display: inline-block; transform: rotate(-3deg); background: #FFC8DD; padding: 5px 15px; border-radius: 10px;">Delicious Bites</span></h1>
+    <br>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    
+    
+
+    <div class="search-bar">
+        <input type="text" placeholder="Search for food...">
+    </div>
+    
+    <section id="menu" class="menu">
+        <div class="menu-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Pizza-3007395.jpg/1200px-Pizza-3007395.jpg"Pizza">
+            <h3>Pizza</h3>
+            <p>Delicious cheesy pizza with fresh toppings.</p>
+        </div>
+        <div class="menu-item">
+            <img src="https://www.foodandwine.com/thmb/DI29Houjc_ccAtFKly0BbVsusHc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/crispy-comte-cheesburgers-FT-RECIPE0921-6166c6552b7148e8a8561f7765ddf20b.jpg" alt="Burger">
+            <h3>Burger</h3>
+            <p>Juicy grilled burger with special sauce.</p>
+        </div>
+        <div class="menu-item">
+            <img src="https://www.maggi.ng/sites/default/files/styles/home_stage_944_531/public/srh_recipes/615369b5451bcc10bd28c6b608620b68.jpg?h=10d202d3&itok=V34x8d8C" alt="Pasta">
+            <h3>Pasta</h3>
+            <p>Classic Italian pasta with rich flavors.</p>
+        </div>
+        <div class="menu-item">
+            <img src="https://www.onceuponachef.com/images/2019/07/Big-Italian-Salad.jpg" alt="Salad">
+            <h3>Salad</h3>
+            <p>Fresh and healthy green salad.</p>
+        </div>
+        <div class="menu-item">
+            <img src="https://imgstaticcontent.lbb.in/lbbnew/wp-content/uploads/sites/2/2016/11/EDO-ITCHotel-i.jpg" alt="Sushi">
+            <h3>Sushi</h3>
+            <p>Authentic Japanese sushi with fresh ingredients.</p>
+        </div>
+        <div class="menu-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDCa26o4vAb8QvdnJkMM4i3sa2ExVaueFPqQ&s alt="Steak">
+            <h3>Steak</h3>
+            <p>Perfectly grilled steak with seasoning.</p>
+        </div>
+        <div class="menu-item">
+            <img src="https://www.thespruceeats.com/thmb/ereeBcFkDEbDT2VSlDe34sqXO_8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/chicken-tinga-tinga-de-pollo-4773239-Hero_01-1bd1d960c02a4fdb812323b8c60fd55b.jpg" alt="Tacos">
+            <h3>Tacos</h3>
+            <p>Spicy and flavorful Mexican tacos.</p>
+        </div>
+        <div class="menu-item">
+            <img src="https://www.yayforfood.com/wp-content/uploads/fresh-berries-honey-lemon-mascarpone-cream-featured-720x720.jpg" alt="Dessert">
+            <h3>Dessert</h3>
+            <p>Sweet and delicious dessert selection.</p>
+        </div>
+    </section>
+    <footer class="footer">
+        <p>Created by Avishi Sarda. © Copyright 2025 All rights reserved.</p>
+    </footer>
+</body>
+</html>

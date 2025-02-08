@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<head>
+    <title>About Jaipur</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            background: linear-gradient(to bottom, #FAE3D9, #FCE8D5, #FAF3E0);
+            color: #5C3D2E;
+        }
+        nav {
+            background: rgba(241, 183, 181, 0.9);
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 600;
+            margin: 0 15px;
+            transition: color 0.3s ease-in-out;
+        }
+        nav a:hover {
+            color: #8B5E83;
+        }
+        .header {
+            text-align: center;
+            padding: 60px 20px;
+            margin-top: 60px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .header h1 {
+            font-size: 42px;
+            color: #8B5E83;
+            animation: floatUp 3s infinite alternate;
+        }
+        .about-content, .authors-section, .author-profiles {
+            text-align: center;
+            padding: 40px 20px;
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 2s ease-in-out;
+        }
+        .about-content p, .authors-section p, .author-profiles p {
+            font-size: 18px;
+            color: #5C3D2E;
+            line-height: 1.6;
+        }
+        .image-gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+        .image-gallery img {
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .author-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .author-card {
+            background: #FFF;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 250px;
+        }
+        .author-card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes floatUp {
+            from { transform: translateY(0); }
+            to { transform: translateY(-10px); }
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(241, 183, 181, 0.9);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo"><strong>Jaipur Wonders</strong></div>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="blog.html">Blog</a>
+            <a href="about.html">About</a>
+        </div>
+    </nav>
+
+    <section class="header">
+        <h1>About Jaipur</h1>
+    </section>
+     <section class="about-content">
+        <p>Jaipur, the capital of Rajasthan, is a city known for its rich history, vibrant culture, and stunning architecture. Often called the Pink City, Jaipur is home to grand palaces, bustling bazaars, and timeless traditions. The city offers a perfect blend of heritage and modernity, making it a must-visit destination for travelers.</p>
+        <p>From the magnificent Amber Fort to the serene Jal Mahal, Jaipur's landmarks reflect its royal past. The city's lively festivals, delicious cuisine, and warm hospitality leave visitors enchanted, ensuring an unforgettable experience.</p>
+    </section>
+
+    <section class="image-gallery">
+        <img src="https://assets.minorhotels.com/image/upload/q_auto,f_auto/media/minor/anantara/images/anantara-jewel-bagh-jaipur-hotel/08_gallery_ok/anantara_jewel-bagh_jaipur_hotel_exterior_1920x1037.jpg" alt="Amber Fort">
+        <img src="https://assets.vogue.in/photos/5ce41ea8b803113d138f5cd2/1:1/w_1080,h_1080,c_limit/Jaipur-Travel-Shopping-Restaurants.jpg" alt="Hawa Mahal">
+        <img src="https://www.royalquestresorts.com/wp-content/uploads/2023/09/jal-mahal-jaipur.jpg" alt="Jal Mahal">
+    </section>
+
+    <section class="authors-section">
+        <h2 style="color: #8B5E83;">Meet Our Authors</h2>
+        <br>
+        <p>Jaipur Wonders is brought to you by a team of passionate writers, travelers, and history enthusiasts who love sharing the beauty and culture of Jaipur.</p>
+    </section>
+
+    <section class="author-profiles">
+        <h2 style="color: #8B5E83;">Author Profiles</h2>
+        <div class="author-container">
+            <div class="author-card">
+                <img src="https://thirdeyetraveller.com/wp-content/uploads/ThirdEyeTravellerProfile-1448x2048.jpg" alt="Author 1">
+                <h3>Sophie Pearce</h3>
+                <p>Travel writer and photographer exploring Jaipur's hidden gems.</p>
+                <a href = "https://thirdeyetraveller.com/about-third-eye-traveller-2/"> 
+                    <br> More about her! </a>
+            </div>
+            <div class="author-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkhfucv1MAbGFugDMMQz6t0eW_w03pnzfNzJI3AzYNS9Tqrf_fXAouaRbvvd1-Uy2HTio&usqp=CAU" alt="Author 2">
+                <h3>Sarah Murdoch</h3>
+                <p>Historian and blogger passionate about Jaipur's rich heritage.</p>
+                <a href ="https://adventureswithsarah.net/about-sarah/">
+                     <br> More about her!</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p> Created by Avishi Sarda. © Copyright 2025 All rights reserved.</p>
+    </footer>
+</body>
+</html>

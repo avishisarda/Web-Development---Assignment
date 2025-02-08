@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<head>
+    <title>Menu - Delicious Bites</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            background-color: #F8EDEB;
+            color: #5C3D2E;
+        }
+        nav {
+            background: #D8A7B1;
+            color: white;
+            padding: 15px;
+            display: flex;
+            justify-content: space-around;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 600;
+        }
+        .menu-container {
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 42px;
+            font-weight: 600;
+            color: #B5838D;
+            margin-bottom: 20px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .cuisine-section {
+            margin-bottom: 30px;
+        }
+        .menu-items {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .menu-item {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            width: 250px;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+        .menu-item:hover {
+            transform: scale(1.05);
+        }
+        .menu-item img {
+            width: 100%;
+            border-radius: 8px;
+            height: 150px;
+            object-fit: cover;
+        }
+        .menu-item h3 {
+            color: #B5838D;
+        }
+        .price {
+            font-weight: bold;
+            color: #E5989B;
+        }
+        .ingredients {
+            font-size: 14px;
+            color: #6D6875;
+        }
+        .footer {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 2.5px;
+            font-size: 14px;
+            border-radius: 4px;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; color: #B5838D; margin-top: 20px; font-size: 42px; font-family: 'Poppins', sans-serif; font-weight: 600; animation: fadeIn 1.5s ease-in-out;"><span style="display: inline-block; transform: rotate(-3deg); background: #FFC8DD; padding: 5px 15px; border-radius: 10px;">Delicious Bites</span></h1>
+    <br>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="#">Menu</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    
+    <div class="menu-container">
+        <h1>Our Menu</h1>
+        
+        <div class="cuisine-section">
+            <h2>Italian Cuisine</h2>
+            <br>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="https://imgmediagumlet.lbb.in/media/2023/02/63e39a8dc9ae884e143db091_1675860621236.jpg" alt="Pizza">
+                    <h3>Pizza</h3>
+                    <p class="price">Rs.300</p>
+                    <p class="ingredients">Tomato sauce, mozzarella, basil, olive oil</p>
+                </div>
+                <div class="menu-item">
+                    <img src="https://www.maggi.ng/sites/default/files/styles/home_stage_944_531/public/srh_recipes/615369b5451bcc10bd28c6b608620b68.jpg?h=10d202d3&itok=V34x8d8C" alt="Pasta">
+                    <h3>Pasta</h3>
+                    <p class="price">Rs.350</p>
+                    <p class="ingredients">Penne, tomato sauce, garlic, parmesan</p>
+                </div>
+                <div class="menu-item">
+                    <img src="https://www.southernliving.com/thmb/iI2Pd7BIh0MFuQ79WIEtgli9Ji4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Extra_Easy_Lasagna_006_4x3-41b0a478514c43e9baed0659bd362625.jpg" alt="Lasagna">
+                    <h3>Lasagna</h3>
+                    <p class="price">Rs.499</p>
+                    <p class="ingredients">Layers of pasta, cheese, and sauce</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="cuisine-section">
+            <h2>Mexican Cuisine</h2>
+            <br>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="https://images.immediate.co.uk/production/volatile/sites/30/2022/08/Fish-Tacos-1337495.jpg?quality=90&resize=556,505" alt="Tacos">
+                    <h3>Tacos</h3>
+                    <p class="price">Rs.100</p>
+                    <p class="ingredients">lettuce, cheese, salsa</p>
+                </div>
+                <div class="menu-item">
+                    <img src="https://www.theseasonedmom.com/wp-content/uploads/2018/02/The-Easiest-Burrito-Recipe-9.jpg" alt="Burrito">
+                    <h3>Burrito</h3>
+                    <p class="price">Rs.150</p>
+                    <p class="ingredients">Rice, beans, meat, cheese</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="cuisine-section">
+            <h2>American Cuisine</h2>
+            <br>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="https://www.foodandwine.com/thmb/DI29Houjc_ccAtFKly0BbVsusHc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/crispy-comte-cheesburgers-FT-RECIPE0921-6166c6552b7148e8a8561f7765ddf20b.jpg" alt="Burger">
+                    <h3>Burger</h3>
+                    <p class="price">Rs.150</p>
+                    <p class="ingredients">Lettuce, tomato, cheese, bun</p>
+                </div>
+                <div class="menu-item">
+                    <img src="https://www.savoryexperiments.com/wp-content/uploads/2024/02/Cajun-Fries-19.jpg" alt="FrenchFries">
+                    <h3>French Fries</h3>
+                    <p class="price">Rs.80</p>
+                    <p class="ingredients"> Potato, salt </p>
+                </div>
+                <div class="menu-item">
+                    <img src="https://www.andy-cooks.com/cdn/shop/articles/20230826032636-andy-20cooks-20-20korean-20fried-20chicken.jpg?v=1693088250" alt="Fried Chicken">
+                    <h3>Fried Chicken</h3>
+                    <p class="price">Rs.300</p>
+                    <p class="ingredients">Crispy fried chicken, special seasoning</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>Created by Avishi Sarda. © Copyright 2025 All rights reserved.</p>
+    </footer>
+</body>
+</html>
